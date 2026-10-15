@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urna dos Desenhos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="ticker" aria-hidden="true">
+    <span class="ao-vivo"><i></i>AO VIVO</span>
+    <div class="ticker-trilho">
+      <div class="ticker-texto">
+        <span>ELEIÇÃO DO DESENHO MAIS AMADO ✦ SESSÃO DA MANHÃ ✦ 30 CANDIDATOS, 6 DÉCADAS ✦ VOTO SECRETO, BISCOITO SCOOBY LIBERADO ✦ NÃO VALE VOTAR DE PIJAMA... VALE SIM ✦ </span>
+        <span>ELEIÇÃO DO DESENHO MAIS AMADO ✦ SESSÃO DA MANHÃ ✦ 30 CANDIDATOS, 6 DÉCADAS ✦ VOTO SECRETO, BISCOITO SCOOBY LIBERADO ✦ NÃO VALE VOTAR DE PIJAMA... VALE SIM ✦ </span>
+      </div>
+    </div>
+  </div>
+
+  <header class="topo">
+    <h1 class="logo">
+      <span class="logo-1">Urna</span>
+      <span class="logo-2">dos Desenhos</span>
+    </h1>
+    <p class="sub">Dos anos 70 até hoje: qual desenho marcou a sua infância?</p>
+  </header>
+
+  <main class="palco">
+
+    <aside class="guia">
+      <span class="fita"></span>
+      <h2>Guia do Eleitor</h2>
+      <p class="dica">Você vota <mark>uma vez em cada década</mark>, dos anos 70 até hoje. O primeiro número é a década. Toque no desenho para digitar, ou use o teclado da urna.</p>
+      <div id="lista" class="lista"></div>
+    </aside>
+
+    <section class="urna-wrap" id="urna">
+
+      <div class="urna">
+        <!-- adesivos: um objeto de cada década -->
+        <svg class="adesivo s70" data-decada="70" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="#1d1a17" stroke="#2b2118" stroke-width="3"/>
+          <g fill="none" stroke="#3a3530" stroke-width="1.5">
+            <circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="34"/><circle cx="50" cy="50" r="28"/>
+          </g>
+          <path d="M20 30 A36 36 0 0 1 36 16" fill="none" stroke="#6a625a" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="50" cy="50" r="19" fill="#d9682b"/>
+          <circle cx="50" cy="50" r="2.5" fill="#1d1a17"/>
+          <text x="50" y="56" text-anchor="middle" font-family="Arial Black, Arial" font-size="16" fill="#fff8e6">70</text>
+        </svg>
+
+        <svg class="adesivo s80" data-decada="80" viewBox="0 0 110 72" aria-hidden="true">
+          <rect x="2" y="2" width="106" height="68" rx="8" fill="#e0457b" stroke="#2b2118" stroke-width="3"/>
+          <rect x="12" y="10" width="86" height="34" rx="4" fill="#fff8e6" stroke="#2b2118" stroke-width="2.5"/>
+          <circle cx="36" cy="27" r="9" fill="#2b2118"/><circle cx="74" cy="27" r="9" fill="#2b2118"/>
+          <circle cx="36" cy="27" r="3.5" fill="#fff8e6"/><circle cx="74" cy="27" r="3.5" fill="#fff8e6"/>
+          <rect x="46" y="22" width="18" height="10" fill="#2b2118" opacity=".35"/>
+          <path d="M24 70 L32 52 H78 L86 70" fill="#c23b6a" stroke="#2b2118" stroke-width="2.5"/>
+          <text x="55" y="65" text-anchor="middle" font-family="Arial Black, Arial" font-size="13" fill="#fff8e6">80</text>
+        </svg>
+
+        <svg class="adesivo s90" data-decada="90" viewBox="0 0 110 66" aria-hidden="true">
+          <rect x="2" y="2" width="106" height="62" rx="5" fill="#222" stroke="#2b2118" stroke-width="3"/>
+          <rect x="10" y="8" width="90" height="18" rx="2" fill="#2a8f86"/>
+          <text x="20" y="22" font-family="Arial Black, Arial" font-size="13" fill="#f6d23c">VHS</text>
+          <text x="96" y="22" text-anchor="end" font-family="Arial Black, Arial" font-size="13" fill="#fff8e6">90</text>
+          <rect x="22" y="33" width="66" height="22" rx="3" fill="#3a3a3a" stroke="#555" stroke-width="1.5"/>
+          <circle cx="38" cy="44" r="8" fill="#141414"/><circle cx="72" cy="44" r="8" fill="#141414"/>
+          <circle cx="38" cy="44" r="3" fill="#e0457b"/><circle cx="72" cy="44" r="3" fill="#e0457b"/>
+        </svg>
+
+        <svg class="adesivo s00" data-decada="00" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="cd" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#cfe3f5"/><stop offset=".35" stop-color="#f4d7ec"/>
+              <stop offset=".6" stop-color="#d4f2df"/><stop offset="1" stop-color="#a9c4e6"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" fill="url(#cd)" stroke="#2b2118" stroke-width="3"/>
+          <circle cx="50" cy="50" r="13" fill="#fff8e6" stroke="#2b2118" stroke-width="2.5"/>
+          <circle cx="50" cy="50" r="5" fill="#2b2118"/>
+          <path d="M22 34 A32 32 0 0 1 40 19" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          <text x="50" y="82" text-anchor="middle" font-family="Arial Black, Arial" font-size="13" fill="#3b6fd8">2000</text>
+        </svg>
+
+        <svg class="adesivo s10" data-decada="10" viewBox="0 0 60 100" aria-hidden="true">
+          <rect x="3" y="3" width="54" height="94" rx="9" fill="#2b2b2e" stroke="#2b2118" stroke-width="3"/>
+          <rect x="9" y="14" width="42" height="68" rx="2" fill="#6f9a1f"/>
+          <rect x="24" y="8" width="12" height="2.5" rx="1.2" fill="#555"/>
+          <circle cx="30" cy="89" r="3.5" fill="none" stroke="#666" stroke-width="1.5"/>
+          <path d="M30 50 C22 44 18 39 22 34 C25 30 29 32 30 35 C31 32 35 30 38 34 C42 39 38 44 30 50 Z" fill="#fff8e6"/>
+          <text x="30" y="72" text-anchor="middle" font-family="Arial Black, Arial" font-size="11" fill="#fff8e6">2010</text>
+        </svg>
+
+        <svg class="adesivo s20" data-decada="20" viewBox="0 0 100 86" aria-hidden="true">
+          <path d="M16 56 V44 A34 34 0 0 1 84 44 V56" fill="none" stroke="#2b2118" stroke-width="11" stroke-linecap="round"/>
+          <path d="M16 56 V44 A34 34 0 0 1 84 44 V56" fill="none" stroke="#b8322f" stroke-width="6" stroke-linecap="round"/>
+          <rect x="4" y="46" width="24" height="36" rx="10" fill="#b8322f" stroke="#2b2118" stroke-width="3"/>
+          <rect x="72" y="46" width="24" height="36" rx="10" fill="#b8322f" stroke="#2b2118" stroke-width="3"/>
+          <circle cx="50" cy="62" r="15" fill="#fff8e6" stroke="#2b2118" stroke-width="2.5"/>
+          <path d="M45 54 L58 62 L45 70 Z" fill="#b8322f"/>
+          <text x="50" y="40" text-anchor="middle" font-family="Arial Black, Arial" font-size="12" fill="#2b2118">2020</text>
+        </svg>
+
+        <div class="moldura">
+          <div class="tela" id="tela">
+
+            <div class="v-etapa" id="vEtapa"></div>
+
+            <div class="voto">
+              <div class="v-topo">SEU VOTO PARA</div>
+              <div class="v-corpo">
+                <div class="v-info">
+                  <div class="cargo" id="vCargo">Desenho dos Anos 70</div>
+                  <div class="linha numero">Número:
+                    <span class="caixa"></span><span class="caixa"></span>
+                  </div>
+                  <div class="v-msg" id="vMsg"></div>
+                  <div class="linha dado">Nome: <b id="vNome"></b></div>
+                  <div class="linha dado">Vice: <b id="vVice"></b></div>
+                  <div class="linha dado">Década: <b id="vDecada"></b></div>
+                </div>
+                <div class="v-foto" id="vFoto"></div>
+              </div>
+              <div class="v-rodape">
+                Aperte a tecla:<br>
+                &nbsp;<b>CONFIRMA</b> para CONFIRMAR este voto<br>
+                &nbsp;<b>CORRIGE</b> para REINICIAR este voto
+              </div>
+            </div>
+
+            <div class="fim">
+              <span>FIM</span>
+              <small>VOTOU</small>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="teclado">
+          <div class="placa">
+            <svg viewBox="0 0 24 20" width="18" height="15" aria-hidden="true">
+              <path d="M8 1 L12 5 L16 1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="1" y="5" width="22" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <rect x="4" y="8" width="12" height="8" rx="1.5" fill="currentColor"/>
+              <circle cx="19.5" cy="10" r="1.3" fill="currentColor"/><circle cx="19.5" cy="14" r="1.3" fill="currentColor"/>
+            </svg>
+            TRIBUNAL DOS DESENHOS
+          </div>
+          <div class="teclas">
+            <button class="tecla" data-tecla="1">1</button>
+            <button class="tecla" data-tecla="2">2</button>
+            <button class="tecla" data-tecla="3">3</button>
+            <button class="tecla" data-tecla="4">4</button>
+            <button class="tecla" data-tecla="5">5</button>
+            <button class="tecla" data-tecla="6">6</button>
+            <button class="tecla" data-tecla="7">7</button>
+            <button class="tecla" data-tecla="8">8</button>
+            <button class="tecla" data-tecla="9">9</button>
+            <button class="tecla zero" data-tecla="0">0</button>
+          </div>
+          <div class="acoes">
+            <button class="acao branco" data-tecla="branco">BRANCO</button>
+            <button class="acao corrige" data-tecla="corrige">CORRIGE</button>
+            <button class="acao confirma" data-tecla="confirma">CONFIRMA</button>
+          </div>
+        </div>
+      </div>
+
+      <ol class="etapas" id="etapas" aria-label="Etapas da votação"></ol>
+
+      <div class="rodape-urna">
+        <p class="atalhos">No computador: números do teclado, <kbd>Backspace</kbd> corrige, <kbd>Enter</kbd> confirma, <kbd>B</kbd> vota em branco.</p>
+        <div class="botoes-urna">
+          <button class="btn-boletim apurar" id="abrirApuracao">Apurar votos</button>
+          <button class="btn-boletim" id="abrirBoletim">Boletim de urna</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Urna dos Desenhos · projeto escolar</p>
+  </footer>
+
+  <dialog id="boletim">
+    <div class="recibo" id="recibo"></div>
+  </dialog>
+
+  <dialog id="apuracao" class="apuracao" aria-label="Apuração dos votos">
+    <div class="ap-topo">
+      <span class="ap-tag">PLANTÃO</span>
+      <span class="ap-titulo">Apuração da Eleição dos Desenhos</span>
+      <button type="button" class="ap-fechar" id="apFechar" aria-label="Fechar apuração">✕</button>
+    </div>
+    <div class="ap-palco" id="apPalco"></div>
+    <div class="ap-rodape">
+      <span id="apInfo"></span>
+      <button type="button" class="ap-proximo" id="apProximo"></button>
+    </div>
+    <div id="apConfete" class="confete" aria-hidden="true"></div>
+  </dialog>
+
+  <div id="cedula" class="cedula" hidden></div>
+
+  <div id="confete" class="confete" aria-hidden="true"></div>
+
+  <script src="js/dados.js"></script>
+  <script src="js/urna.js"></script>
+</body>
+</html>
